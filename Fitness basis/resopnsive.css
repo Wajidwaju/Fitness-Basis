@@ -1,0 +1,106 @@
+/* Remove horizontal scroll issues */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Margin fixes for mobile spacing */
+@media (max-width: 768px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+
+/* Mobile Hero Text Scaling */
+@media (max-width: 425px) {
+  .hero {
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 18px !important;
+    line-height: 1.2;
+  }
+
+  .hero-highlight {
+    font-size: 30px !important;
+    
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+/* About Us */
+@media (max-width: 768px) {
+  .about-section .col-lg-6 {
+    margin-bottom: 30px;
+  }
+
+  .about-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-section img {
+    border-radius: 12px;
+  }
+
+  .about-section ul {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+
+  .about-section li {
+    justify-content: center;
+  }
+}
+
+/* Services Section */
+
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 30px;
+  }
+
+  .service-card {
+    text-align: center;
+    padding: 25px;
+  }
+
+  .icon-box {
+    margin: 0 auto;
+  }
+}
+/* Pricing */
+
+
+
+
+/* Footer */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .col-lg-4 {
+    margin-bottom: 20px;
+  }
+}
