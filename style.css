@@ -1,0 +1,283 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR GLASS EFFECT */
+.glass-nav {
+    background: transparent;
+    padding: 5px 0;
+}
+.navbar-logo img{
+    width: 180px;
+}
+/* .navbar-nav{
+       background: rgba(255, 255, 255, 0.15);
+       b
+} */
+.nav-link {
+    font-size: 18px;
+    margin: 0 10px;
+    font-weight: 400;
+    
+}
+
+.nav-link:hover {
+    color: #00bcd4 !important;
+}   
+
+.nav-btn {
+    background: #00bcd4 !important;
+    border: none;
+}
+
+.nav-btn:hover {
+    background: #0097a7 !important;
+}
+
+/* HERO SECTION */
+.hero { 
+        position: relative;
+height: 100vh;
+overflow: hidden;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.25);
+  }
+  
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+     height: 100%;
+      background: url('./assets/Fitness\ Basis\ Gym.png') no-repeat center top/cover;
+    filter: blur(1px);               /* 👈 Adjust blur level */
+    transform: scale(1.1);           /* Prevent white edges due to blur */
+    z-index: -1;
+    opacity: 0.9;                   /* Optional for fade effect */
+}
+
+
+ .hero::after {
+    content: "";
+    position: relative;
+    /* top: 0; left: 0;  */
+    /* width: 100%;  */
+    height: 100vh;
+     background: rgba(19, 17, 17, 0.25); 
+     /* 👈 Adjust darkness */
+    z-index: -1;
+} 
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.25);   /* 👈 Adjust darkness */
+    z-index: -1;
+}
+
+
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #111;
+}
+
+.hero-highlight {
+    font-size: 48px;
+    font-weight: 800;
+    color: #0CA8C0;
+    /* background: #0CA8C0; */
+
+}
+
+.hero-subtext {
+    font-size: 18px;
+    color: black;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-btn {
+    background: #0CA8C0 !important;
+    border: none;
+
+}
+
+.hero-btn:hover {
+    background: #0097a7 !important;
+}
+
+.hero-btn-border {
+    /* border: 2px solid #0CA8C0; */
+    border: none;
+}
+
+.hero-btn-border:hover {
+    background: #00bcd4;
+    color: white;
+}
+
+.stats-section h2 {
+    font-size: 32px;
+    color: #0CA8C0;
+}
+.stats-section p{
+    color: black;   
+    
+    font-weight: 300;
+    
+
+
+} 
+.stat-icon {
+    font-size: 32px;
+    color: #0CA8C0;
+    margin-bottom: 10px;
+}
+
+.stat-icon i {
+    background: rgba(0, 188, 212, 0.1);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* About Us  */
+.about-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #111;
+}
+
+.about-title span {
+    color: #00bcd4;
+}
+
+.about-text {
+    font-size: 16px;
+       color: black;
+    line-height: 1.7;
+}
+
+.feature-icon {
+    font-size: 20px;
+    color: #00bcd4;
+    margin-right: 12px;
+}
+
+.about-section img {
+    object-fit:cover;
+}
+
+/* Serivices Section */
+.services-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #111;
+}
+
+.services-title span {
+    color: #00bcd4;
+}
+
+.services-subtext {
+    font-size: 18px;
+    color: black;
+    max-width: 650px;
+    margin: auto;
+}
+
+.service-card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    transition: 0.3s ease-in-out;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px #0CA8C0;
+}
+
+.icon-box {
+    width: 55px;
+    height: 55px;
+    background: rgba(0,188,212,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #0CA8C0;
+    font-size: 26px;
+}
+
+/* Pricing section */
+.pricing-card {
+    border: 2px solid #eaeaea;
+    transition: 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+      box-shadow: 0 8px 20px #0CA8C0;
+}
+
+.highlight-border {
+    border: 2px solid #17a2b8 !important;
+}
+
+.popular-badge, .best-value-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #17a2b8;
+    color: white;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.best-value-badge {
+    background: #00c853;
+}
+/* .pricing-card button {
+    background: #e8fafd ;
+    border: none;
+} */
+
+
+/* Contact Section */
+.contact-box {
+    border: 2px solid #f1f1f1;
+    transition: 0.3s;
+}
+
+.contact-box:hover {
+    border-color: #17a2b8;
+    transform: translateY(-3px);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background: #e8fafd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* footer */
+.footer-section {
+    background: #ffffff;
+}
+
+.footer-logo {
+    width: 20%;
+    opacity: 0.9;
+}
