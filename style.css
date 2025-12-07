@@ -1,283 +1,278 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
 
+    body {
+        font-family: 'Poppins', sans-serif;
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
+    }
 
-/* NAVBAR GLASS EFFECT */
-.glass-nav {
-    background: transparent;
-    padding: 5px 0;
-}
-.navbar-logo img{
-    width: 180px;
-}
-/* .navbar-nav{
-       background: rgba(255, 255, 255, 0.15);
-       b
-} */
-.nav-link {
-    font-size: 18px;
-    margin: 0 10px;
-    font-weight: 400;
-    
-}
+    /* NAVBAR GLASS EFFECT */
+    .glass-nav {
+        /* background: transparent; */
+        padding: 5px 0;
+    }
+    .navbar-logo img{
+        width: 200px;
+    }
+    /* .navbar-nav{
+        background: rgba(255, 255, 255, 0.15);
+        b
+    } */
+    .nav-link {
+        font-size: 14px;
+        margin: 0 5px;
+        /* font-weight: 400; */
+        
+    }
 
-.nav-link:hover {
-    color: #00bcd4 !important;
-}   
+    .nav-link:hover {
+        color: #1076BC !important;
+    }   
 
-.nav-btn {
-    background: #00bcd4 !important;
-    border: none;
-}
+    .nav-btn {
+        background: #1076BC !important;
+        border: none;
+    }
 
-.nav-btn:hover {
-    background: #0097a7 !important;
-}
+    .nav-btn:hover {
+        background: #1076BC !important;
+    }
 
-/* HERO SECTION */
-.hero { 
-        position: relative;
-height: 100vh;
-overflow: hidden;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.25);
-  }
-  
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-     height: 100%;
-      background: url('./assets/Fitness\ Basis\ Gym.png') no-repeat center top/cover;
-    filter: blur(1px);               /* 👈 Adjust blur level */
-    transform: scale(1.1);           /* Prevent white edges due to blur */
-    z-index: -1;
-    opacity: 0.9;                   /* Optional for fade effect */
-}
-
-
- .hero::after {
-    content: "";
+    /* HERO SECTION */
+    .hero { 
     position: relative;
-    /* top: 0; left: 0;  */
-    /* width: 100%;  */
-    height: 100vh;
-     background: rgba(19, 17, 17, 0.25); 
-     /* 👈 Adjust darkness */
-    z-index: -1;
-} 
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.25);   /* 👈 Adjust darkness */
-    z-index: -1;
-}
+    /* height: 100vh;   */
+    background-image: url('./assets/Fitness\ Basis\ Gym.png');
+    background: size 100px; 
+    background-position: top;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+    padding: 100px 0px;
 
-
-
-.hero-title {
-    font-size: 48px;
-    font-weight: 800;
-    color: #111;
-}
-
-.hero-highlight {
-    font-size: 48px;
-    font-weight: 800;
-    color: #0CA8C0;
-    /* background: #0CA8C0; */
-
-}
-
-.hero-subtext {
-    font-size: 18px;
-    color: black;
-    max-width: 700px;
-    margin: auto;
-}
-
-.hero-btn {
-    background: #0CA8C0 !important;
-    border: none;
-
-}
-
-.hero-btn:hover {
-    background: #0097a7 !important;
-}
-
-.hero-btn-border {
-    /* border: 2px solid #0CA8C0; */
-    border: none;
-}
-
-.hero-btn-border:hover {
-    background: #00bcd4;
-    color: white;
-}
-
-.stats-section h2 {
-    font-size: 32px;
-    color: #0CA8C0;
-}
-.stats-section p{
-    color: black;   
+    }
     
-    font-weight: 300;
-    
+    .hero-title {
+        font-size: 48px;
+        font-weight: 800;
+        color: #111;;
+    }
 
+    .hero-highlight {
+        font-size: 48px;
+        font-weight: 800;
+        color: #1076BC;
+        /* background: #0CA8C0; */
 
-} 
-.stat-icon {
-    font-size: 32px;
-    color: #0CA8C0;
-    margin-bottom: 10px;
-}
+    }
 
-.stat-icon i {
-    background: rgba(0, 188, 212, 0.1);
-    padding: 12px;
-    border-radius: 50%;
-}
+    .hero-subtext {
+        font-size: 18px;
+        color: black;
+        margin: auto;
+    }
 
-/* About Us  */
-.about-title {
+    .hero-btn {
+        background: #1076BC !important;
+        border: none;
+
+    }
+
+    .hero-btn:hover {
+        background: #1076BC !important;
+    }
+
+    .hero-btn-border {
+        /* border: 2px solid #0CA8C0; */
+        border: none;
+    }
+
+    .hero-btn-border:hover {
+        background: #1076BC;
+        color: white;
+    }
+    .stats-section {
+        position: relative;
+        bottom: -30px;
+    }
+    .stats-section h2 {
+    color: #1076BC;
+    font-weight: 700;
+    font-style: Bold;
     font-size: 36px;
-    font-weight: 800;
-    color: #111;
-}
-
-.about-title span {
-    color: #00bcd4;
-}
-
-.about-text {
-    font-size: 16px;
-       color: black;
-    line-height: 1.7;
-}
-
-.feature-icon {
-    font-size: 20px;
-    color: #00bcd4;
-    margin-right: 12px;
-}
-
-.about-section img {
-    object-fit:cover;
-}
-
-/* Serivices Section */
-.services-title {
-    font-size: 40px;
-    font-weight: 800;
-    color: #111;
-}
-
-.services-title span {
-    color: #00bcd4;
-}
-
-.services-subtext {
-    font-size: 18px;
-    color: black;
-    max-width: 650px;
-    margin: auto;
-}
-
-.service-card {
-    background: #fff;
-    padding: 22px;
-    border-radius: 18px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-    transition: 0.3s ease-in-out;
-    border: 1px solid rgba(0,0,0,0.03);
-}
-
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px #0CA8C0;
-}
-
-.icon-box {
-    width: 55px;
-    height: 55px;
-    background: rgba(0,188,212,0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    color: #0CA8C0;
-    font-size: 26px;
-}
-
-/* Pricing section */
-.pricing-card {
-    border: 2px solid #eaeaea;
-    transition: 0.3s ease-in-out;
-}
-
-.pricing-card:hover {
-    transform: translateY(-8px);
-      box-shadow: 0 8px 20px #0CA8C0;
-}
-
-.highlight-border {
-    border: 2px solid #17a2b8 !important;
-}
-
-.popular-badge, .best-value-badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #17a2b8;
-    color: white;
-    font-size: 12px;
-    padding: 2px 10px;
-    border-radius: 10px;
-}
-
-.best-value-badge {
-    background: #00c853;
-}
-/* .pricing-card button {
-    background: #e8fafd ;
-    border: none;
-} */
+    }
+    .stats-section p{
+        color: black;   
+        font-weight: 600;
+    } 
 
 
-/* Contact Section */
-.contact-box {
-    border: 2px solid #f1f1f1;
-    transition: 0.3s;
-}
+    /* About Us  */
 
-.contact-box:hover {
-    border-color: #17a2b8;
-    transform: translateY(-3px);
-}
+    .hero-img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    }
+    .small-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    }
+    .about-title {
+    font-size: 38px;
+    font-weight: 700;
+    }
+    .highlight {
+    color: #1076BC;
+    }
+    .icon-check {
+    width: 22px;
+    height: 22px;
+    }
+    .feature-icon {
+        font-size: 20px;
+        color: #1076BC;
+        margin-right: 10px;
+    }   
+    /* 
+    .about-title {
+        font-size: 48px;
+        font-weight: 800;
+        color: #111;
+    }
 
-.icon-box {
-    width: 50px;
-    height: 50px;
-    background: #e8fafd;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* footer */
-.footer-section {
-    background: #ffffff;
-}
+    .about-title span {
+        color: #1076BC;
+        font-size: 48px;
+    }
 
-.footer-logo {
-    width: 20%;
-    opacity: 0.9;
-}
+    .about-text {
+        width: 50%;
+        color: black;
+        line-height: 1.7;
+    }
+
+    */
+
+    /* .about-section img {} */
+    
+
+    /* Serivices Section */
+    .services-title {
+        font-size: 40px;
+        font-weight: 800;
+        color: #111;
+    }
+
+    .services-title span {
+        color: #1076BC;
+    }
+
+    .services-subtext {
+        font-size: 18px;
+        color: black;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .service-card {
+        background: #fff;
+        padding: 22px;
+        border-radius: 18px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+        transition: 0.3s ease-in-out;
+        border: 1px solid rgba(0,0,0,0.03);
+    }
+
+    .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px #1076BC;
+    }
+
+    .icon-box {
+        width: 55px;
+        height: 55px;
+        background: rgba(0,188,212,0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        color: #1076BC;
+        font-size: 26px;
+    }
+
+    /* Pricing section */
+    .pricing-card {
+        border: 2px solid #eaeaea;
+        transition: 0.3s ease-in-out;
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px #1076BC;
+    }
+    #pricing span{
+        color: #1076BC;
+    }
+
+    .highlight-border {
+        border: 2px solid #1076BC !important;
+    }
+
+    .popular-badge, .best-value-badge {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #1076BC;
+        color: white;
+        font-size: 12px;
+        padding: 2px 10px;
+        border-radius: 10px;
+    }
+
+    .best-value-badge {
+        background: #00c853;
+    }
+    /* .pricing-card button {
+        background: #e8fafd ;
+        border: none;
+    } */
+
+
+    /* Contact Section */
+    .contact-box {
+        border: 2px solid #f1f1f1;
+        transition: 0.3s;
+    }
+    #Contact span{
+        color: #17a2b8;
+    }
+    .contact-box:hover {
+        border-color: #17a2b8;
+        transform: translateY(-3px);
+    }
+
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        background: #e8fafd;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* footer */
+    .footer-section {
+        background: #ffffff;
+    }
+
+    .footer-logo {
+        width: 20%;
+        opacity: 0.9;
+    }
