@@ -9,20 +9,28 @@ html, body {
 }
 
 /* Margin fixes for mobile spacing */
-@media (max-width:425px) {
+@media (max-width:768px) {
   /* section {
     padding: 50px 20px;
   } */
 
-  .container {
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+  .container{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
   }
 }
 
 
 /* Mobile Hero Text Scaling */
-@media (max-width:425px) {
+@media (max-width:768px) {
+
+.navbar-collapse{
+  background: white;
+  height: 18rem;
+  /* border-radius: 10px;  */
+
+
+}
   .hero {
     height: 80vh;
     /* padding: 40px 20px; */
@@ -53,15 +61,18 @@ html, body {
     
   }
   .stats-section {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+
   }
   
-.stats-section .col-md-4 {
-  width: 30%;
-   font-size: 16px;
-   flex-direction: column;
+.stats-section .col-md-2 {
+   font-size: 14px;
+   width: 30%;
+   /* flex-direction: column; */
+
    
   }
   .stats-section h2{
@@ -69,20 +80,22 @@ html, body {
   }
   .stats-section p{
       font-size: 14px;
-      font-weight: 500;
+      font-weight: 400;
+  }
+  .btn{
+    font-size: 14px;
   }
 
 }
 /* About Us */
-@media  (max-width:425px) {
+@media  (max-width:768px) {
 
-   .about-section {
+    .about-section {
     /* margin-bottom: 30px; */
     width: 100%;
     display: flex;
-    flex-direction: column;
-    
-  } 
+    /* flex-direction: column; */
+  }  
 
   .about-title {
     font-size: 18px;
@@ -93,13 +106,15 @@ html, body {
     }
   
   .about-text {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     
   }
   .about-section ul {
     padding-left: 0 !important;
     text-align: start;
+
+
   }
 
   .about-section li {
@@ -107,15 +122,17 @@ html, body {
     font-size: 14px;
   }
   /* .about-section  img{
-    
+    object-fit: contain;  
   } */
 }
 
 /* Services Section */
 
-@media (max-width:425px) {
+@media (max-width:768px) {
+
   .services-title {
     font-size: 30px;
+    padding: 10px;
   }
 
   .service-card {
@@ -129,24 +146,26 @@ html, body {
 }
 /* Pricing */
 
-  @media (max-width:425px) {
-    .fratures {
+  @media (max-width:768px) {
+    .features {
       display: flex;
       flex-direction: column;
       text-align: start;
     }
-
-   
   } 
 
-@media (max-width:425px) {
-  /* .contact-box{
-   
-  } */
+@media (max-width:768px) {
+  .contact-box{
+  width: 100%;
+
+  } 
 }
 /* Footer */
-@media (max-width:425px) {
+@media (max-width:768px) {
   footer {
     text-align: center;
+  }
+  .footer-logo{
+    width: 200px;
   }
 }
