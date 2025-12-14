@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Basis</title>
-
+    <!-- google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="resopnsive.css">
-
-
 </head>
 <body>  
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg fixed-top glass-nav shadow-sm bg-transparent mt-2">
-
-  <div class="container-fluid">
+<div class="container-fluid">
 
     <div class="navbar-logo">
         <img src="./assets/logoBH 1.png " alt="Logo" >
@@ -62,24 +60,25 @@
   <label class="form-check-label" for="checkNativeSwitch">
   </label> -->
 </div>
-  </div>
-
-
 </nav>
 
 <!-- HERO SECTION -->
-<section class="hero" id="Home">
+<section class="hero container-fluid" id="Home">
 
-    <div class="hero-inner container-fluid  text-center ">
+    <div class="hero-inner container  text-center ">
         <h1 class="hero-title ">Transform Your</h1> 
         <h1 class="hero-highlight">Gym Management</h1>
 
-        <p class="hero-subtext  mt-3">Complete gym management solution with subscription, <br> payments, notifications, and reporting
-        </p>
+        <p class="hero-subtext text-muted  mt-3">
+          Complete gym management solution with subscription,
+payments, notifications, and reporting
+            </p>
 
-        <div class="mt-4 px-3" >
-   <a href="#" class="btn btn-primary  hero-btn"> Get Started  →</a>
+        <div class="hero-btns mt-4 px-3" >
+        <a href="#" class="btn  hero-btn"> Get Started  →</a>
+
          <a href="#" class="btn btn-light  hero-btn-border">Learn More</a>
+
         </div>
 
         <!-- STATS -->
@@ -87,10 +86,10 @@
 
             <div class="col-md-2">
                 <div class="stat-icon ">
-                <img src="./assets/hero1.png" class=""/>
+                <img src="./assets/hero1.png" />
               </div>
                 <h2 class="fw-bold">500+</h2>
-                <p>Active Gyms</p>
+                <p class="text-muted ">Active Gyms</p>
             </div>
 
             <div class="col-md-2">
@@ -98,14 +97,14 @@
                <img src="./assets/hero3.png"/>  
                 </div>
                 <h2 class="fw-bold">50K+</h2>
-                <p>Members</p>
+                <p class="text-muted">Members</p>
             </div>
             <div class="col-md-2">  
                 <div class="stat-icon">
                   <img src="./assets/hero2.png"/>
                 </div>
                 <h2 class="fw-bold">99.9%</h2>
-                <p>Uptime</p>
+                <p class="text-muted">Uptime</p>
             </div>
         </div>
     </div>
@@ -113,92 +112,64 @@
 </section>
 
 <!-- ABOUT SECTION -->
-  <section class="container-fluid px-5 py-5">
-  <div class="row g-0 p-0">
-
-    <!-- LEFT IMAGES -->
-    <div class="col-lg-6  ">
-      <img src="./assets/Component 4.png" class="hero-img img-fluid" alt="Gym Image">
-
-      <div class="row g-0">
-        <div class="col-6">
-          <img src="./assets/Gym Equipment.png" class="small-img img-fluid w-100" alt="Equipment">
-        </div>
-
-        <div class=" col-6 ">
-          <img src="./assets/Gym Lounge.png" class="small-img img-fluid w-100" alt="Lounge">
-        </div>
-      </div>
+ <section class="About-Us container-fluid mt-5" id="About-Us">
+  <div class="row ">
+    <div class="col">
+      <img src="./assets/Container.png" alt="" class="">
     </div>
-      
 
-<!-- <div class="col p-0 m-0 ">
-<img src="./assets/Component 4.png"  class="hero-img img-fluid"  alt="Gym Image" />
-
-<div class="row g-0">
-<div class="col p-0">
-<img src="./assets/Gym Equipment.png" 
- class="small-img" alt="Small Image 2" />
-</div>
-
-<div class="col p-0 ">
-<img src="./assets/Gym Lounge.png" class="small-img " alt="Small Image 1" />
-</div>
-
-</div> -->
-
-
-
-
-<!-- Right Content -->
-<div class="col-lg-6 ">  
-<h2 class="about-title">About <span class="highlight">Fitness Basis</span></h2>
-    <p class="about-text">
-          Fitness Basis is Saudi Arabia's   leading gym management  - اساس اللياقة  
-        platform, designed to streamline operations for fitness centers of all sizes.
+    <div class="col">
+    <h2 class="about-title">About
+         <span class="highlight">Fitness Basis</span>
+        </h2>
+         <p class="about-text text-muted">
+  Fitness Basis is Saudi Arabia's leading gym management -اساس اللياقة 
+platform, designed to streamline operations for fitness centers of all sizes.
         </p>
-        <p class="about-text">
-          Our comprehensive solution handles everything from member subscriptions and payments to notifications
-          and detailed reporting, allowing you to focus on your members' fitness journey. 
+        <p class="about-text text-muted">
+       Our comprehensive solution handles everything from member
+subscriptions and payments to notifications and detailed reporting, allowing
+you to focus on what matters most - your members' fitness journey.
         </p>
-<ul class="list-unstyled ">
-<li class="d-flex align-items-center mb-2">
+    <ul class="list-unstyled ">
+    <li class="d-flex align-items-center  mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
-Automated subscription management
+      Automated subscription management
 </li>
 <li class="d-flex align-items-center mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
-Real-time notifications and alerts
+        Real-time notifications and alerts
 </li>
 <li class="d-flex align-items-center mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
-
-Advanced reporting and analytics
+        Advanced reporting and analytics
 </li>
 <li class="d-flex align-items-center mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
-
-Secure payment processing
+        Secure payment processing
 </li>
 <li class="d-flex align-items-center mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
-Multi-location support
+        Multi-location support
 </li>
 </ul>
-</div>
-</div>
-</section>
+    </div>
+  </div>
+  </section>
+
+
 
 <!-- SERVICES SECTION -->
-<section class="services-section container-fluid px-5" id="Services">
-  <div class="text-center pb-4">
+<section class="services-section container-fluid py-5" 
+id="Services">
+  <div class="text-center pt-3">
     <!-- Section Heading -->
-      <h2 class="services-title ">Our<span> Services</span></h2>
-      <p class="services-subtext">Everything you need to run your gym efficiently, all in one powerful platform</p>
+      <h2 class="services-title">Our<span> Services</span></h2>
+      <p class="services-subtext text-muted ">Everything you need to run your gym efficiently, all in one powerful platform</p>
     </div>
 
     <!-- Cards Grid -->
-    <div class="row g-4">
+    <div class="row g-4 pt-3 px-5">
 
       <!-- Card 1 -->
       <div class="col-lg-4 ">
@@ -207,7 +178,7 @@ Multi-location support
             <i class="bi bi-arrow-repeat"></i>
           </div>
           <h5 class="mt-3 fw-bold">Subscription Management</h5>
-          <p>Effortlessly manage member subscriptions with automated renewals and flexible plans.</p>
+          <p class="text-muted">Effortlessly manage member subscriptions with automated renewals and flexible plans.</p>
         </div>
       </div>
 
@@ -218,7 +189,8 @@ Multi-location support
             <i class="bi bi-bell"></i>
           </div>
           <h5 class="mt-3 fw-bold">Notification Management</h5>
-          <p>Keep members engaged with automated SMS and email alerts for updates and renewals.</p>
+          <p class="text-muted">Keep members engaged with automated SMS and
+email notifications for renewals and updates</p>
         </div>
       </div>
 
@@ -229,7 +201,8 @@ Multi-location support
             <i class="bi bi-bar-chart"></i>
           </div>
           <h5 class="mt-3 fw-bold">Reports & Analytics</h5>
-          <p>Comprehensive insights into performance with detailed reporting tools.</p>
+          <p class="text-muted">Comprehensive insights into your gym's
+      performance with detailed reporting tools</p>
         </div>
       </div>
 
@@ -240,8 +213,8 @@ Multi-location support
             <i class="bi bi-credit-card"></i>
           </div>
           <h5 class="mt-3 fw-bold">Payment Gateway</h5>
-          <p>Secure payment processing with support for major payment methods such as
-              Tabby, Tamara, and others.</p>
+          <p class="text-muted">Secure payment processing with support for
+Tabby, Tamara, and major payment methods</p>
         </div>
       </div>
 
@@ -252,7 +225,8 @@ Multi-location support
             <i class="bi bi-file-earmark-text"></i>
           </div>
           <h5 class="mt-3 fw-bold">Invoicing</h5>
-          <p>Automated invoice generation and financial tracking for seamless record management.</p>
+          <p class="text-muted">Automated invoice generation and management
+for seamless financial tracking</p>
         </div>
       </div>
 
@@ -261,96 +235,123 @@ Multi-location support
 </section>
 
 <!-- Pricing Section -->
-<section class="pricing container-fluid py-5 text-center" id="Pricing">
+<section class="pricing container-fluid text-center" id="Pricing">
+  <div class="pt-5">
   <h1 class="fw-bold">Simple
-    <span class="">Pricing</span>
+    <span class="pricing-title">Pricing</span>
   </h1>
-    <p class=" px-3 text-black">Choose the perfect plan for your gym. All plans include full access to all features.</p>
 
-    <div class="container-fluid mt-4">
+    <p class="text-muted">Choose the perfect plan for your gym. All plans include full access to all features.</p>
+  </div>
+
+<!-- Cards -->
+    <div class=" container-fluid mt-4">
       
-        <div class="row justify-content-center gap-4">
+        <div class="row justify-content-center gap-5">
             <!-- 1 Month -->
-            <div class="col-lg-2 col-md-4">
-                <div class="pricing-card p-3 bg-white shadow-sm rounded">
-                    <h6>1 Month</h6>
-                    <h2 class="fw-bold text-info">599<small class="text-muted fs-6">SAR</small>
+        
+                <div class="pricing-card p-4  shadow-sm rounded">
+                    <h6 class="fw-bold">1 Month</h6>
+                    <h2 class="fw-bold">599<small class="text-muted fs-6">SAR</small>
                     </h2>
-                    <button class="btn btn-info text-white w-100 mt-3">Get Started</button>
+                    <button class="btn  w-100 mt-3">Get Started</button>
                 </div>
-            </div>
+          
 
             <!-- 2 Months -->
-            <div class="col-lg-2 col-md-4">
-                <div class="pricing-card p-3 bg-white shadow-sm rounded">
-                    <h6>2 Months</h6>
-                    <h2 class="fw-bold text-info">899 <small class="text-muted fs-6">SAR</small></h2>
-                    <button class="btn btn-info text-white w-100 mt-3">Get Started</button>
+            
+                <div class="pricing-card p-4  shadow-sm rounded">
+                    <h6 class="fw-bold">2 Months</h6>
+                    <h2 class="fw-bold ">899
+                  <small class="text-muted fs-6">SAR</small>
+                    </h2>
+                    <button class="btn w-100 mt-3">Get Started</button>
                 </div>
-            </div>
+           
 
             <!-- 3 Months -->
-            <div class="col-lg-2 col-md-4">
-                <div class="pricing-card p-3 bg-white shadow highlight-border position-relative rounded">
-                    <span class="popular-badge">Popular</span>
-                    <h6>3 Months</h6>
-                    <h2 class="fw-bold text-info">1,099 <small class="text-muted fs-6">SAR</small></h2>
-                    <button class="btn btn-info text-white w-100 mt-3">Get Started</button>
+            
+                <div class="pricing-card p-4  shadow highlight-border position-relative rounded">
+     <span class="popular-badge">Popular</span>
+                    <h6 class="fw-bold">3 Months</h6>
+                    <h2 class="fw-bold ">1,099 <small class="text-muted fs-6">SAR</small></h2>
+                    <button class="btn   w-100 mt-3">Get Started</button>
                 </div>
-            </div>
+            
 
             <!-- 6 Months -->
-            <div class="col-lg-2 col-md-4">
-                <div class="pricing-card p-3 bg-white shadow-sm rounded">
-                    <h6>6 Months</h6>
-                    <h2 class="fw-bold text-info">1,799 <small class="text-muted fs-6">SAR</small></h2>
-                    <button class="btn btn-info text-white w-100 mt-3">Get Started</button>
+              <div class="pricing-card p-4  shadow-sm rounded">
+                    <h6 class="fw-bold">6 Months</h6>
+                    <h2 class="fw-bold">1,799 <small class="text-muted fs-6">SAR</small></h2>
+                    <button class="btn   w-100 mt-3">Get Started</button>
                 </div>
-            </div>
+            <!-- <div class=" col-md-2"></div> -->
 
             <!-- 1 Year -->
-            <div class="col-lg-2 col-md-4">
-                <div class="pricing-card p-3 bg-white shadow-sm rounded position-relative">
+            <!-- <div class=" col-md-2">  </div> -->
+     <div class="pricing-card p-4  shadow-sm rounded position-relative">
                 <span class="popular-badge">Best Value</span>
-                    <h6 class="">1 Year</h6>
-                    <h2 class="fw-bold text-info">2,999 <small class="text-muted fs-6">SAR</small></h2>
-                    <button class="btn btn-info text-white w-100 mt-3">Get Started</button>
+                    <h6 class="fw-bold">1 Year</h6>
+                    <h2 class="fw-bold">2,999 <small class="text-muted fs-6">SAR</small></h2>
+                    <button class="btn w-100 mt-3">Get Started</button>
                 </div>
-            </div>
-
         </div>
     </div>
 
     <!-- Features -->
-    <div class="container  mt-3">
-    <div class=" bg-white shadow-sm rounded">
-   <h5 class="fw-bold py-2">All Plans Include</h5>
+    <div class="feature-box container-fluid  mt-3 pt-5">
+    <div class="  rounded">
+   <h5 class="fw-bold pt-3">All Plans Include</h5>
+         <div class="row py-4">
 
-         <div class="row">
+          <div class=" features d-flex text-start ">  
 
-          <div class=" features d-flex flex-wrap text-start px-5 py-2 ">   
+          <div class=" col-md-3 "> 
+      <div class="py-3">
+       <img src="./assets/Vector (2).png" alt="" class="p-2">
+      <span> Full subscription management</span>
+        </div>
+        <div>
+        <img src="./assets/Vector (2).png" alt="" class="p-2">
+            <span>Invoicing System</span>
+        </div>
 
-          <div class=" col-md-3"> 
-            <p>
-              <i class="bi bi-check feature-icon"></i>
-               Full subscription management</p>
-               <p>
-                <i class="bi bi-check feature-icon"></i>Invoicing System</p>
             </div>
       
           <div class=" col-md-3">
-          <p>  <i class="bi bi-check feature-icon"></i>  Automated notifications</p>
-           <p>  <i class="bi bi-check feature-icon"></i>24/7 Support</p>
+            <div class="py-3">
+      <img src="./assets/Vector (2).png" alt="" class="p-2">
+         <span>Automated notifications </span>
+            </div>
+            <div>
+            <img src="./assets/Vector (2).png" alt="" class="p-2">
+            <span>24/7 Support </span>
+            </div>
+
+    
           </div>
+
             <div class=" col-md-3">
-                <p>  <i class="bi bi-check feature-icon"></i>  Advanced reporting</p>
-                    <p>
-          <i class="bi bi-check feature-icon"></i>Multi-location support</p>
+                    <div class="py-3">
+      <img src="./assets/Vector (2).png" alt="" class="p-2">
+         <span> Advanced reporting </span>
+            </div>
+                  <div>
+      <img src="./assets/Vector (2).png" alt="" class="p-2">
+         <span>Multi-location support</span>
+            </div>
                 </div>
 
              <div class=" col-md-3">
-              <p>  <i class="bi bi-check feature-icon"></i>  Payment gateway integration</p>
-                <p>  <i class="bi bi-check feature-icon"></i>Mobile app access</p>
+      <div class="py-3" >
+      <img src="./assets/Vector (2).png" alt="" class="p-2">
+        <span > Payment gateway integration</span>
+            </div>
+               <div>
+      <img src="./assets/Vector (2).png" alt="" class="p-2">
+         <span> Mobile app access</span>
+            </div>
+            
                 </div>
           </div>
             </div>
@@ -359,7 +360,7 @@ Multi-location support
 
     <!-- Payment Options -->
     <div class="mt-2">
-        <p class="">Payment options available</p>
+        <p class="text-muted">Payment Options Available</p>
         <div>
           <button class="border-0 bg-transparent">
         <img src="./assets/Group 1.png" alt="Tabby Logo" class="payment-logo w-50"> 
@@ -370,11 +371,11 @@ Multi-location support
 </section>
 
 <!-- Contact Section -->
-<section class="container-fluid py-2" id="Contact">
-    <div class="text-center mb-4">
+<section class="Contact container-fluid py-2" id="Contact">
+    <div class="text-center pt-5 mb-4">
         <h1 class="fw-bold">Get in <span class="">Touch</span>
         </h1>
-        <p class="">
+        <p class="text-muted">
             Ready to transform your gym management? Contact us today to get started.
         </p>
     </div>
@@ -384,21 +385,20 @@ Multi-location support
             <!-- Left Contact Info -->
       <div class="col-lg-6">
               
-     <div class="contact-box p-3 mb-2 bg-white shadow-sm d-flex align-items-center rounded"> 
+     <div class="contact-box p-3 mb-2 d-flex align-items-center rounded"> 
     <div class="icon-box m-2">
-           <i class="bi bi-envelope text-info fs-3"></i>
+           <i class="bi bi-envelope fs-3"></i>
               </div>
-
            <div>
              <h6 class="fw-bold mb-2">Email</h6>
      <p class="text-muted mb-0">info@fitnessbasis.sa</p>
                     </div>
                 </div>
 
-         <div class="contact-box p-3 mb-2 bg-white shadow-lg d-flex align-items-center rounded">
+         <div class="contact-box  p-3 mb-2   d-flex align-items-center rounded">
 
                     <div class="icon-box m-2">
-                        <i class="bi bi-telephone text-info fs-3"></i>
+                        <i class="bi bi-telephone  fs-3"></i>
                     </div>
                     <div>
                         <h6 class="fw-bold mb-2">Phone</h6>
@@ -406,28 +406,30 @@ Multi-location support
                     </div>
                 </div>
               
-                <div class="contact-box p-3 mb-3 bg-white shadow-lg d-flex align-items-center rounded">
+                <div class="contact-box p-3 mb-3   d-flex align-items-center rounded">
                   <div class="icon-box m-2">
-                 <i class="bi bi-geo-alt text-info fs-3"></i>
+         <i class="bi bi-geo-alt fs-3"></i>
                     </div>
 
                     <div>
                   <h6 class="fw-bold mb-1">Location</h6>
-        <p class="text-muted mb-0">Saudi Arabia</p>
+             <p class="text-muted mb-0">Saudi Arabia</p>
                     </div>
                 </div>
             </div>
 
             <!-- Contact Form -->
             <div class="col-lg-6">
-                <div class="p-4 bg-white shadow-sm rounded">
+            <div class="form-section p-4 shadow-sm rounded">
 
-                    <form>
+                <form class=""> 
                    <div class="row mb-3">
+
                             <div class="col-md-6">
                                 <label class="form-label">Name</label>
                                 <input type="text" class="form-control" placeholder="Your name">
                             </div>
+
                             <div class="col-md-6">
                                 <label class="form-label">Email</label>
                                 <input type="email" class="form-control" placeholder="your@email.com">
@@ -444,7 +446,9 @@ Multi-location support
                             <textarea class="form-control" rows="4" placeholder="Tell us about your gym..."></textarea>
                         </div>
 
-                        <button class="btn btn-info text-white w-100 py-2">Send Message</button>
+                        <button class="btn  w-100 py-2">Send Message
+
+                        </button>
                     </form>
 
                 </div>
@@ -455,18 +459,17 @@ Multi-location support
 </section>
 
 <!-- footer -->
-<footer class="footer-section bg-transparent py-5">
+<section class="footer-section bg-transparent pt-4">
     <div class="container text-center">
-
         <!-- Logo -->
-        <img src="./assets/Fitness Basis.png" alt="Fitness Basis Logo" class="footer-logo ">
+        <img src="./assets/Fitness Basis.png" alt="Fitness Basis Logo" class="footer-logo pb-3">
 
         <!-- Title + Description -->
         <h6 class="fw-semibold mb-2">
             Transform your gym management with Fitness Basis
         </h6>
 
-        <p class="text-muted mb-3">
+        <p class="text-unmuted mb-3">
             Saudi Arabia’s Leading Gym Management Platform – أساس اللياقة
         </p>
 
@@ -476,18 +479,17 @@ Multi-location support
         <p class="text-muted small">
             © 2025 Fitness Basis. All rights reserved.
         </p>
-
     </div>
+</section>
 
 
-</footer>
-
+</body>
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
 
 <!-- Bootstrap Icons CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 <script src="./mode.js"></script>
-</body>
 </html>
