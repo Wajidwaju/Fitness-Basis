@@ -89,18 +89,15 @@ html, body {
 
 }
 /* About Us */
-@media  (min-width: 0px ) and (max-width: 768px) {
+@media  (min-width: 0px) and (max-width: 768px) {
 
     .About-Us {
     /* margin-bottom: 30px; */
     width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-      padding: 0px 18px;
-
   }  
 
   .about-title {
@@ -111,17 +108,18 @@ html, body {
     font-size: 20px;   
     }
   
-    .About-Us .text-muted {
-    width: 450px;
+    .About-Us .about-text{
+    
     font-size: 14px;
     /* padding:10px 10px; */
     font-weight: 400;
     
   }
   .About-Us img { 
-    width:500px;
+    width:450px;
+    
     /* padding:10px 10px; */
-    padding-left: 0 !important;
+    
 
   }
   .About-Us ul {
@@ -206,6 +204,7 @@ font-size: 14px;
     width: 200px;
   }
 }
+
 
 
 
