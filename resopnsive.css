@@ -89,7 +89,7 @@ html, body {
 
 }
 /* About Us */
-@media  (min-width: 320px ) and (max-width: 768px) {
+@media  (min-width: 0px ) and (max-width: 768px) {
 
     .About-Us {
     /* margin-bottom: 30px; */
@@ -111,7 +111,7 @@ html, body {
     font-size: 20px;   
     }
   
-    .About-Us .about-text {
+    .About-Us .text-muted {
     width: 450px;
     font-size: 14px;
     /* padding:10px 10px; */
@@ -206,5 +206,6 @@ font-size: 14px;
     width: 200px;
   }
 }
+
 
 
