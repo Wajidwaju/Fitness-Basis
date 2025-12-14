@@ -4,51 +4,51 @@
 }
 
 html, body {
-  /* max-width: 100%; */
+  /* max-width: 100%;   */
   overflow-x: hidden;
 }
 
 /* Margin fixes for mobile spacing */
-@media (max-width:768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   /* section {
     padding: 50px 20px;
   } */
 
-  .container{
+  /* .container{
     padding-left: 10px !important;
     padding-right: 10px !important;
-  }
+  } */
+.navbar-collapse{
+  background: #ffffff;
+  height: 18rem;
+  /* border-radius: 10px;  */
+} 
 }
 
 
 /* Mobile Hero Text Scaling */
-@media (max-width:768px) {
-
-.navbar-collapse{
-  background: white;
-  height: 18rem;
-  /* border-radius: 10px;  */
+@media  (min-width: 0px) and (max-width: 768px) {
 
 
-}
   .hero {
-    height: 80vh;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
     /* padding: 40px 20px; */
     text-align: center;
   }
   .hero-subtext{
-    font-size: 14px;
-    font-weight: 400;
+
+      padding: 0px 20px; 
   }
 
   .hero-title {
-    font-size: 16px !important;
-
-    /* line-height: 1.2; */
+    font-size: 32px !important;
   }
 
   .hero-highlight {
-    font-size: 16px !important;
+    font-size: 32px !important;
     
   }
   .hero-buttons {
@@ -61,26 +61,27 @@ html, body {
     
   }
   .stats-section {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    
 
   }
   
 .stats-section .col-md-2 {
-   font-size: 14px;
    width: 30%;
    /* flex-direction: column; */
 
    
   }
   .stats-section h2{
-    font-size: 16px;
+    font-size: 28px;
   }
-  .stats-section p{
-      font-size: 14px;
-      font-weight: 400;
+  .stats-section .text-muted{
+    /* width: 10px; */
+    font-size: 12px;
+    font-weight: 400;
   }
   .btn{
     font-size: 14px;
@@ -88,80 +89,115 @@ html, body {
 
 }
 /* About Us */
-@media  (max-width:768px) {
+@media  (min-width: 320px ) and (max-width: 768px) {
 
-    .about-section {
+    .About-Us {
     /* margin-bottom: 30px; */
     width: 100%;
+    margin: auto;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
   }  
 
   .about-title {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
   }
   .about-title span{
-    font-size: 18px;   
+    font-size: 20px;   
     }
   
-  .about-text {
+    .About-Us .about-text {
+    width: 450px;
     font-size: 14px;
+    /* padding:10px 10px; */
     font-weight: 400;
     
   }
-  .about-section ul {
+  .About-Us img { 
+    width:500px;
+    /* padding:10px 10px; */
     padding-left: 0 !important;
-    text-align: start;
+
+  }
+  .About-Us ul {
+    /* padding-left: 0 !important;   */
+    text-align: center;
 
 
   }
-
-  .about-section li {
-    justify-content: start;
+  .About-Us li {
+    /* justify-content: start; */
     font-size: 14px;
+    line-height: 1.2;
   }
-  /* .about-section  img{
-    object-fit: contain;  
-  } */
 }
 
 /* Services Section */
 
-@media (max-width:768px) {
+@media (min-width: 0px) and (max-width: 768px) {
 
   .services-title {
     font-size: 30px;
     padding: 10px;
   }
-
+.services-subtext{
+font-size: 14px;
+}
   .service-card {
+    width: 100%;
     text-align: center;
-    padding: 25px;
-  }
 
+  }
+.service-card p{
+      font-size: small;
+     
+}
   .icon-box {
     margin: 0 auto;
   }
 }
 /* Pricing */
 
-  @media (max-width:768px) {
+  @media (min-width: 0px) and (max-width: 768px) {
+.pricing .col-md-2{
+  display: flex;
+  justify-content: center;
+ margin: 3%;
+}
+      .pricing-card {
+        background: #FAFAFA;
+        width: 70%;
+        border: 2px solid #eaeaea;
+        transition: 0.2s ease-in-out;
+        
+    }  
+      .pricing-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px #1076BC;
+        border:2px solid #1076BC;
+
+    }
     .features {
+      font-size: 14px;
+      font-weight: 400;
       display: flex;
       flex-direction: column;
       text-align: start;
     }
   } 
 
-@media (max-width:768px) {
+@media (min-width:0px) and (max-width: 768px) {
   .contact-box{
   width: 100%;
 
   } 
 }
+@media (min-width:0px) and (max-width: 768px) {
 /* Footer */
-@media (max-width:768px) {
   footer {
     text-align: center;
   }
@@ -169,3 +205,4 @@ html, body {
     width: 200px;
   }
 }
+
