@@ -8,16 +8,17 @@ html, body {
   overflow-x: hidden;
 }
 
+
 /* Margin fixes for mobile spacing */
 @media (min-width: 0px) and (max-width: 768px) {
-  /* section {
-    padding: 50px 20px;
-  } */
+  section {
+    padding: 20px 20px;
+  }
 
-  /* .container{
+  .container{
     padding-left: 10px !important;
     padding-right: 10px !important;
-  } */
+  }
 .navbar-collapse{
   background: #ffffff;
   height: 18rem;
@@ -27,19 +28,13 @@ html, body {
 
 
 /* Mobile Hero Text Scaling */
-@media  (min-width: 0px) and (max-width: 768px) {
-
-
+@media  (min-width:310px) and (max-width:768px) {
   .hero {
     height: 100vh;
     margin: auto;
-    display: flex;
-    align-items: center;
-    /* padding: 40px 20px; */
-    text-align: center;
+    
   }
-  .hero-subtext{
-
+  .hero-subtext{  
       padding: 0px 20px; 
   }
 
@@ -58,6 +53,7 @@ html, body {
   .stat-icon img{
     width:  30px;
     height: 30px;
+
     
   }
   .stats-section {
@@ -71,7 +67,7 @@ html, body {
   
 .stats-section .col-md-2 {
    width: 30%;
-   /* flex-direction: column; */
+   flex-direction: column;
 
    
   }
@@ -89,50 +85,47 @@ html, body {
 
 }
 /* About Us */
-@media  (min-width: 0px) and (max-width: 768px) {
+@media  (min-width:320px) and (max-width: 768px) {
 
-    .About-Us {
-    /* margin-bottom: 30px; */
+    .inner {
+    /*margin-bottom: 30px; */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+
   }  
 
   .about-title {
-    font-size: 20px;
-    text-align: center;
+      font-size: 28px !important;
+    /* text-align: center; */
   }
   .about-title span{
-    font-size: 20px;   
+        font-size: 32px !important;
+
     }
-  
-    .About-Us .about-text{
-    
-    font-size: 14px;
-    /* padding:10px 10px; */
+    .about-text {
+    font-size: 14px;  
     font-weight: 400;
     
   }
-  .About-Us img { 
-    width:450px;
-    
-    /* padding:10px 10px; */
-    
-
-  }
-  .About-Us ul {
-    /* padding-left: 0 !important;   */
-    text-align: center;
-
-
-  }
-  .About-Us li {
-    /* justify-content: start; */
-    font-size: 14px;
-    line-height: 1.2;
-  }
+     .main-image {
+      width: 100%;
+    }
+    .main-image img{
+      width: 100%;
+    }
+  
+      .list-unstyled span{
+        font-size: 14px;
+        padding:0%;
+    }
+    /* .About-Us li {
+      justify-content: start;
+      font-size: 14px;
+      padding: 0;
+    } */
 }
 
 /* Services Section */
@@ -204,8 +197,4 @@ font-size: 14px;
     width: 200px;
   }
 }
-
-
-
-
 

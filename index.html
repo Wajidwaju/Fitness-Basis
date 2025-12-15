@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Fitness Basis</title>
     <!-- google fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,8 +11,8 @@
     <!-- Bootstrap CSS -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="resopnsive.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./resopnsive.css">
 </head>
 <body>  
 <!-- NAVBAR -->
@@ -63,17 +64,19 @@
 </nav>
 
 <!-- HERO SECTION -->
-<section class="hero container-fluid" id="Home">
 
-    <div class="hero-inner container  text-center ">
+<section class="hero container-fluid" id="Home">
+  <div class="overlay">
+    <div class="hero-inner container  text-center py-md-5 m-md-auto">
         <h1 class="hero-title ">Transform Your</h1> 
         <h1 class="hero-highlight">Gym Management</h1>
 
-<p class="hero-subtext text-muted  mt-3"> 
-    Complete gym management solution with subscription,
-payments, notifications, and reporting </p>
+        <p class="hero-subtext text-muted  mt-3">
+          Complete gym management solution with subscription,
+payments, notifications, and reporting
+            </p>
 
- <div class="hero-btns mt-4 px-3" >
+        <div class="hero-btns mt-4 px-3" >
         <a href="#" class="btn  hero-btn"> Get Started  →</a>
 
          <a href="#" class="btn btn-light  hero-btn-border">Learn More</a>
@@ -81,10 +84,11 @@ payments, notifications, and reporting </p>
         </div>
 
         <!-- STATS -->
+
         <div class="stats-section row row-cols-md text-center mt-4 align-content-center ">
 
             <div class="col-md-2">
-                <div class="stat-icon ">
+                <div class="stat-icon">
                 <img src="./assets/hero1.png" />
               </div>
                 <h2 class="fw-bold">500+</h2>
@@ -107,71 +111,84 @@ payments, notifications, and reporting </p>
             </div>
         </div>
     </div>
-    
+      </div>  
 </section>
 
 <!-- ABOUT SECTION -->
- <section class="About-Us container-fluid mt-5 px-5" id="About-Us">
-  <div class="row ">
-    <div class="col">
-      <img src="./assets/Container.png" alt="" class="">
+ <section class="About-Us container-fluid" id="About-Us">
+  <div class="inner d-flex flex-md-column flex-lg-row" >
+    <div class="main-image ">
+      <img src="./assets/Container.png"  class="">
     </div>
 
-    <div class="col ">
-    <h2 class="about-title">About
+    <div class="main-content ">
+      
+        <div class="About-heading">
+        <h2 class="about-title">About
          <span class="highlight">Fitness Basis</span>
         </h2>
-         <p class="about-text text-muted">
+    </div>
+
+        <div class="inner-content px-md-2">
+     <p class="about-text text-muted ">
   Fitness Basis is Saudi Arabia's leading gym management -اساس اللياقة 
 platform, designed to streamline operations for fitness centers of all sizes.
         </p>
-        <p class="about-text text-muted">
+   <p class="about-text text-muted">
        Our comprehensive solution handles everything from member
-subscriptions and payments to notifications and detailed reporting, allowing
-you to focus on what matters most - your members' fitness journey.
+    subscriptions and payments to notifications and detailed reporting, allowing <br>
+    you to focus on what matters most - your members' fitness journey.
         </p>
-    <ul class="list-unstyled ">
-    <li class="d-flex align-items-center  mb-2">
+    <div class="list-unstyled ">
+
+    <span class="d-flex align-items-center  mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
       Automated subscription management
-</li>
-<li class="d-flex align-items-center mb-2">
+    </span>   
+
+     <span class="d-flex align-items-center  mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
         Real-time notifications and alerts
-</li>
-<li class="d-flex align-items-center mb-2">
+</span>
+
+    <span class="d-flex align-items-center  mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
         Advanced reporting and analytics
-</li>
-<li class="d-flex align-items-center mb-2">
+</span>
+
+    <span class="d-flex align-items-center  mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
         Secure payment processing
-</li>
-<li class="d-flex align-items-center mb-2">
+</span>
+
+    <span class="d-flex align-items-center  mb-2">
         <i class="bi bi-check-circle feature-icon"></i>
         Multi-location support
-</li>
-</ul>
+    </span>
+
+  </div>
+  </div>
     </div>
   </div>
+  
   </section>
 
 
 
 <!-- SERVICES SECTION -->
-<section class="services-section container-fluid py-5" 
+<section class="services-section container-fluid  " 
 id="Services">
-  <div class="text-center pt-3">
+  <div class=" text-center pt-3">
     <!-- Section Heading -->
       <h2 class="services-title">Our<span> Services</span></h2>
       <p class="services-subtext text-muted ">Everything you need to run your gym efficiently, all in one powerful platform</p>
     </div>
 
     <!-- Cards Grid -->
-    <div class="row g-4 pt-3 px-5">
+    <div class="row g-3 ">
 
       <!-- Card 1 -->
-      <div class="col-lg-4 ">
+      <div class="col-md-4 ">
         <div class="service-card h-100">
           <div class="icon-box">
             <i class="bi bi-arrow-repeat"></i>
@@ -182,7 +199,7 @@ id="Services">
       </div>
 
       <!-- Card 2 -->
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <div class="service-card h-100">
           <div class="icon-box">
             <i class="bi bi-bell"></i>
@@ -194,7 +211,7 @@ email notifications for renewals and updates</p>
       </div>
 
       <!-- Card 3 -->
-      <div class="col-lg-4 ">
+      <div class="col-md-4 ">
         <div class="service-card h-100">
           <div class="icon-box">
             <i class="bi bi-bar-chart"></i>
@@ -206,7 +223,7 @@ email notifications for renewals and updates</p>
       </div>
 
       <!-- Card 4 -->
-      <div class="col-lg-4 ">
+      <div class="col-md-4 ">
         <div class="service-card h-100">
           <div class="icon-box">
             <i class="bi bi-credit-card"></i>
@@ -218,7 +235,7 @@ Tabby, Tamara, and major payment methods</p>
       </div>
 
       <!-- Card 5 -->
-      <div class="col-lg-4">
+      <div class="col-md-4">
         <div class="service-card h-100">
           <div class="icon-box">
             <i class="bi bi-file-earmark-text"></i>
@@ -244,9 +261,9 @@ for seamless financial tracking</p>
   </div>
 
 <!-- Cards -->
-    <div class=" container-fluid mt-4">
+    <div class="container-lg mt-4">
       
-        <div class="row justify-content-center gap-5">
+  <div class="row gap-lg-4 justify-content-md-center gap-md-3">
             <!-- 1 Month -->
         
                 <div class="pricing-card p-4  shadow-sm rounded">
@@ -295,20 +312,20 @@ for seamless financial tracking</p>
                     <button class="btn w-100 mt-3">Get Started</button>
                 </div>
         </div>
-    </div>
+    </div>  
 
     <!-- Features -->
-    <div class="feature-box container-fluid  mt-3 pt-5">
-    <div class="  rounded">
-   <h5 class="fw-bold pt-3">All Plans Include</h5>
+ <div class="feature-box container-fluid  mt-3 pt-5">
+    <div class="rounded">
+   <h5 class="fw-bold pt-3 pt-md-2">All Plans Include</h5>
          <div class="row py-4">
 
-          <div class=" features d-flex text-start ">  
+    <div class=" features d-md-flex ">  
 
-          <div class=" col-md-3 "> 
+          <div class=" col-md-3  "> 
       <div class="py-3">
        <img src="./assets/Vector (2).png" alt="" class="p-2">
-      <span> Full subscription management</span>
+      <span > Full subscription management</span>
         </div>
         <div>
         <img src="./assets/Vector (2).png" alt="" class="p-2">
@@ -492,5 +509,3 @@ for seamless financial tracking</p>
 
 <script src="./mode.js"></script>
 </html>
-
-

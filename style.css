@@ -99,16 +99,16 @@ body {
     }
 
     /* HERO SECTION */
-    
-    .hero { 
-    /* position: absolute; */
-    height: 100vh;  
+    .hero{
+        width: 100%;
+
+    }
+    .overlay {    
     background-image: url('./assets/Fitness\ Basis\ Gym.png');
     background-size: cover; 
     background-position:left top;
     background-repeat: no-repeat;
-    padding: 100px 20px;
-        
+     padding: 100px 20px;
     }
     
     .hero-title {
@@ -150,32 +150,29 @@ body {
         color: white;
     }
     .stats-section {
-        position: relative;
+        /* position: relative; */
         justify-content: center;
-        padding-top: 30px;
+        align-items: center;
+        gap:10px;
+        /* padding-top: 30px; */
         /* bottom: -30px; */
     }
     .stats-section h2 {
     color: #1076BC;
     font-weight: 700;
     font-style: Bold;
-    font-size: 28px;
+    font-size: 22px;
     }
-    .stats-section p{
-        color: black;   
-        font-weight: 600;
-    } 
-        .stats-section img{
-            width: 35px;
-        }
 
 
     /* About Us  */
-.About-Us {
-   width:100%;
-   margin:auto;
-   
-}
+
+     
+     .inner{
+        margin: auto;
+        width: 100%;  
+        
+     }
     .about-title {
     font-size: 38px;
     font-weight: 700;
@@ -188,14 +185,22 @@ body {
         color: #1076BC;
         margin-right: 10px;
     }   
-    .list-unstyled li{
+    .list-unstyled span{
         font-size: 16px;
          line-height: 1.8; 
         padding:12px; 
     }
-    .about-text {
-        font-size: 18px;
+    .main-image{
+            width: 100%;
     }
+    /* .main-image img{
+        width: 800px;
+    } */
+    .main-content{
+        width: 100%;
+    }
+  
+ 
 
 
     /* Serivices Section */
@@ -210,12 +215,7 @@ body {
         color: #1076BC;
     }
 
-    /* .services-subtext #FAFAFA
-        font-size: 18px;
-        color: black;
-        max-width: 650px;
-        margin: auto;
-    } */
+   
 
     .service-card {
         background:rgba(230, 230, 230, 1);
@@ -310,12 +310,6 @@ body {
     }
 
 
-    /* .pricing-card button {
-        background: #e8fafd ;
-        border: none;
-    } */
-
-
     /* Contact Section */
 .Contact{
     background: white;
@@ -360,5 +354,3 @@ background:rgba(250, 250, 250, 1) ;
         width: 200px;
         opacity: 0.9;
     }
-
-
