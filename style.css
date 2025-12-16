@@ -127,6 +127,7 @@ body {
 
     .hero-subtext {
         font-size: 16px; 
+
     }
 
     .hero-btn {
@@ -266,7 +267,6 @@ body {
 
        }
      .pricing-card button{
-
         background-color: #FFFFFF;
         border: 1px solid #E6E6E6;
         font-size: 14px;

@@ -28,15 +28,11 @@ html, body {
 
 
 /* Mobile Hero Text Scaling */
-@media  (min-width:310px) and (max-width:768px) {
-  .hero {
+@media  (min-width:0px) and (max-width:768px) {
+  /* .hero {
     height: 100vh;
-    margin: auto;
-    
-  }
-  .hero-subtext{  
-      padding: 0px 20px; 
-  }
+    margin: auto; } */
+  /* .hero-subtext{ } */
 
   .hero-title {
     font-size: 32px !important;
@@ -56,29 +52,29 @@ html, body {
 
     
   }
-  .stats-section {
+  /* .stats-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-
-  }
+  } */
   
 .stats-section .col-md-2 {
-   width: 30%;
+   width: 25%;
    flex-direction: column;
+   align-items: center;
+   justify-content: center;
 
    
   }
   .stats-section h2{
-    font-size: 28px;
+    font-size: 18px;
   }
-  .stats-section .text-muted{
-    /* width: 10px; */
+  /* .stats-section .text-muted{
+    width: 10px;
     font-size: 12px;
     font-weight: 400;
-  }
+  } */
   .btn{
     font-size: 14px;
   }
@@ -144,10 +140,9 @@ font-size: 14px;
     text-align: center;
 
   }
-.service-card p{
-      font-size: small;
-     
-}
+/* .service-card p{} */
+
+
   .icon-box {
     margin: 0 auto;
   }
@@ -158,7 +153,7 @@ font-size: 14px;
 .pricing .col-md-2{
   display: flex;
   justify-content: center;
- margin: 3%;
+ /* margin: 3%; */
 }
       .pricing-card {
         background: #FAFAFA;
@@ -173,19 +168,23 @@ font-size: 14px;
         border:2px solid #1076BC;
 
     }
-    .features {
+   
+   .features .col-4{ 
+  width: 100%;   
+  text-align:start ;  
+
+          } 
+
+    /* .features span {
       font-size: 14px;
       font-weight: 400;
-      display: flex;
-      flex-direction: column;
-      text-align: start;
-    }
+ 
+    } */
   } 
 
 @media (min-width:0px) and (max-width: 768px) {
   .contact-box{
   width: 100%;
-
   } 
 }
 @media (min-width:0px) and (max-width: 768px) {
