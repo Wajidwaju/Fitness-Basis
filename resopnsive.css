@@ -19,19 +19,45 @@ html, body {
     padding-left: 10px !important;
     padding-right: 10px !important;
   }
-.navbar-collapse{
+
+}
+@media (min-width: 0px) and (max-width: 768px) {
+
+
+
+.collapse{
   background: #ffffff;
-  height: 18rem;
+  
+  /* height: 18rem; */
   /* border-radius: 10px;  */
 } 
+.navbar-logo img{
+  width: 70%;
+  /* padding: 15px;  */
+}
+.navbar-toggler {  
+  /* border: 1px solid white; */  
+  background: transparent;
+  padding: 0 0 ;
+}
+.navbar-toggler-icon{
+  border: 1px solid white;
+  background-color: #eaeaea;
+  padding: 5px;
+  border-radius: 25%;
+}
+
 }
 
 
 /* Mobile Hero Text Scaling */
-@media  (min-width:0px) and (max-width:768px) {
-  /* .hero {
-    height: 100vh;
-    margin: auto; } */
+@media (min-width:0px) and (max-width: 768px) {
+  .hero {
+    margin-top: 0;
+    padding: 0;
+  
+  }
+
   /* .hero-subtext{ } */
 
   .hero-title {
@@ -40,8 +66,8 @@ html, body {
 
   .hero-highlight {
     font-size: 32px !important;
-    
   }
+
   .hero-buttons {
     flex-direction: row;
     gap: 10px;
@@ -117,6 +143,7 @@ html, body {
         font-size: 14px;
         padding:0%;
     }
+
     /* .About-Us li {
       justify-content: start;
       font-size: 14px;
@@ -138,10 +165,10 @@ font-size: 14px;
   .service-card {
     width: 100%;
     text-align: center;
-
   }
-/* .service-card p{} */
 
+
+/* .service-card p{} */
 
   .icon-box {
     margin: 0 auto;
@@ -150,30 +177,28 @@ font-size: 14px;
 /* Pricing */
 
   @media (min-width: 0px) and (max-width: 768px) {
-.pricing .col-md-2{
+ .pricing .col-md-2{
   display: flex;
   justify-content: center;
  /* margin: 3%; */
 }
-      .pricing-card {
+  .pricing-card {
         background: #FAFAFA;
         width: 70%;
         border: 2px solid #eaeaea;
-        transition: 0.2s ease-in-out;
-        
+        transition: 0.2s ease-in-out; 
     }  
-      .pricing-card:hover {
+.pricing-card:hover {
         transform: translateY(-8px);
         box-shadow: 0 8px 20px #1076BC;
         border:2px solid #1076BC;
-
     }
-   
-   .features .col-4{ 
+.features .col-3{ 
   width: 100%;   
-  text-align:start ;  
+  text-align:start;     
 
-          } 
+} 
+
 
     /* .features span {
       font-size: 14px;
@@ -182,7 +207,7 @@ font-size: 14px;
     } */
   } 
 
-@media (min-width:0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .contact-box{
   width: 100%;
   } 
