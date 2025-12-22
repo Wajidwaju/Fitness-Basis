@@ -1,7 +1,7 @@
 /* Remove horizontal scroll issues */
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 html, body {
   /* max-width: 100%;   */
@@ -21,34 +21,47 @@ html, body {
   }
 
 }
-@media (min-width: 0px) and (max-width: 768px) {
+/* Mobile navbar background white when open */
+@media (max-width: 991px) {
+  .navbar-collapse.show {
+    background: #ffffff !important;
+    padding: 1.5rem 1rem;
+    text-align: center !important;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center !important;
+    margin: 0.5rem 0;
+  }
+
+  .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95) !important;
+  }
+
+  .navbar *,
+  .navbar-nav .nav-link {
+    background: transparent !important;
+  }
+
+  .get-touch-btn {
+    width: 100%;
+    display: block;
+    padding: 12px 0;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .get-touch-btn .arrow {
+    right: 16px;
+  }
+
+  .get-touch-btn:hover {
+    padding-right: 32px;
+  }
 
 
-
-.collapse{
-  background: #ffffff;
-  
-  /* height: 18rem; */
-  /* border-radius: 10px;  */
-} 
-.navbar-logo img{
-  width: 70%;
-  /* padding: 15px;  */
 }
-.navbar-toggler {  
-  /* border: 1px solid white; */  
-  background: transparent;
-  padding: 0 0 ;
-}
-.navbar-toggler-icon{
-  border: 1px solid white;
-  background-color: #eaeaea;
-  padding: 5px;
-  border-radius: 25%;
-}
-
-}
-
 
 /* Mobile Hero Text Scaling */
 @media (min-width:0px) and (max-width: 768px) {
@@ -56,6 +69,10 @@ html, body {
     margin-top: 0;
     padding: 0;
   
+  }
+    .hero-heading-main,
+  .hero-heading-highlight {
+    font-size: 45px;
   }
 
   /* .hero-subtext{ } */

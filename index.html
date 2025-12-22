@@ -5,87 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Fitness Basis</title>
-    <!-- google fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&       display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./resopnsive.css">
 </head>
 
 <body>  
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top glass-nav shadow-sm bg-transparent ">
+  <!-- NAVBAR -->
+<nav class="navbar scrolled navbar-expand-lg fixed-top main-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logoBH 1.png" alt="Logo">
+      </a>
 
-<div class="container px-5">
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <div class="navbar-logo">
-    <img src="./assets/logoBH 1.png " alt="Logo" >
+      <!-- Desktop Nav -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+          <a class="nav-link ps-4" href="#">Home</a>
+        </li>
+          <li class="nav-item"><a class="nav-link ps-4" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link ps-4" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link ps-4" href="#">Contact</a></li>
+          <a class="btn get-touch-btn ms-4" href="#">
+            Get in Touch
+             <span class="arrow">→</span>
+          </a>
+        </ul>
+
+      </div>
+
     </div>
+  </nav>
 
-    <button class="navbar-toggler " type="button" 
-    data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-  <div class="collapse navbar-collapse justify-content-end px-5 " id="navbarNav">
-      
-    <ul class="navbar-nav">
-
+  <!-- MOBILE CANVAS MENU -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">
+        <img src="assets/img/logo.png" alt="logo">
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav text-center">
         <li class="nav-item">
-        <a class="nav-link text-dark" href="#Home">Home</a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#About-Us">About Us</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#Services">Services</a>
+          <a class="nav-link" href="#">Services</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#Pricing">Pricing</a>
+        <li class="nav-item"><a class="nav-link" href="#">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#Contact">Contact</a>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a>
         </li>
+        <a class="btn get-touch-btn" href="#">
+          Get in Touch <span class="arrow">→</span>
+        </a>
 
       </ul>
-      <a href="#" class="btn btn-primary ms-3 rounded-pill nav-btn">Get In Touch</a>
     </div>
+  </div>
 
- <!-- <label class="switch">
-  <input type="checkbox" id="darkModeToggle">
-  <span class="slider"></span>
-</label> -->
-
-      <!-- <div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
-  <label class="form-check-label" for="checkNativeSwitch">
-  </label> -->
-</div>
-</nav>
 
 <!-- HERO SECTION -->
 
-<section class="hero container" id="Home">
-  <div class="overlay">
-    <div class="hero-inner  text-center ">
-        <h1 class="hero-title ">Transform Your <br>
-        <span class="hero-highlight">Gym Management</span>
+<section class="hero " id="Home">
+    <div class="hero-inner container-lg   text-center ">
+        <h1 class="hero-title mt-5">Transform Your <br>
+        <span class="hero-highlight mb-3">Gym Management</span>
             </h1>
    <p class="hero-subtext text-muted">
    Complete gym management solution with subscription,<br>payments,notifications, and reporting
             </p>
+            <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap mt-4">
 
-        <div class="hero-btns mt-5 " >
+        <a href="#" class="btn btn-primary-custom">
+          Get Started 
+          <i class="arrow fas fa-arrow-right ms-2"></i>
+        </a>
+
+      <a href="#" class="btn btn-light-custom">Learn More</a>
+      </div>
+
+      <div class="hero-stats row  gap-4 gap-md-0  justify-content-center align-items-center">
+
+        <div class="col-4 col-md-3">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <img src="./assets/hero1.png" />
+            </div>
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Active Gyms</div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-3">
+          <div class="stat-card">
+            <div class="stat-icon">
+               <img src="./assets/hero3.png"/>  
+            </div>
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Members</div>
+          </div>
+        </div>
+
+        <div class="col-4 col-md-3">
+          <div class="stat-card">
+            <div class="stat-icon">
+               <img src="./assets/hero2.png"/>
+              </div>
+            <div class="stat-number">99.9%</div>
+            <div class="stat-label">Uptime</div>
+          </div>
+        </div>
+
+      </div>
+</section>
+
+
+        <!-- <div class="hero-btns mt-5 " >
         <a href="#" class="btn  hero-btn"> Get Started  →</a>
          <a href="#" class="btn btn-light  hero-btn-border">Learn More</a>
 
-        </div>
+        </div> -->
 
         <!-- STATS -->
-
+<!-- 
         <div class="stats-section row row-cols-md text-center pt-5 mt-5 align-content-center ">
 
             <div class="col-md-2">
@@ -111,19 +171,16 @@
                 <p class="text-muted">Uptime</p>
             </div>
         </div>
-    </div>
-      </div>  
-</section>
+    </div> -->
+    
 
 <!-- ABOUT SECTION -->
- <section class="About-Us container " id="About-Us">
+ <section class="About-Us " id="About-Us">
 
-  <div class="inner d-flex flex-md-column flex-lg-row pt-3">
-
-    <div class="main-image">
+  <div class="inner container d-flex">
+       <div class="main-image">
       <img src="./assets/Container.png"  class="">
     </div>
-
     <div class="main-content">
       
     <div class="About-heading">
@@ -172,6 +229,9 @@ platform, designed to streamline operations for fitness centers of all sizes.
   </div>
   </div>
     </div>
+ 
+
+
   </div>
   
   </section>
@@ -253,7 +313,7 @@ Tabby, Tamara, and major payment methods</p>
 <section class="pricing container text-center" id="Pricing">
 
   <div class=" pt-5">
-  <h1 class="fw-bold">Simple
+  <h1 class="pricing-title fw-bold">Simple
     <span class="pricing-title">Pricing</span>
   </h1>
 
@@ -485,29 +545,24 @@ Tabby, Tamara, and major payment methods</p>
     </div>
 </section>
 
-<!-- footer -->
-<section class="footer-section bg-transparent pt-4">
-    <div class="container text-center">
-        <!-- Logo -->
-        <img src="./assets/Fitness Basis.png" alt="Fitness Basis Logo" class="footer-logo pb-3">
+  <!-- Footer------------ -->
+  <footer class="footer-section">
+    <div class="container text-center">     
+      <img src="assets/logoBH 1.png " alt="Fitness Basis Logo" class="footer-logo mb-2" />
+      <p class="footer-heading">
+        Transform your gym management with Fitness Basis
+      </p>
+      <p class="footer-subtext">
+        Saudi Arabia’s Leading Gym Management Platform <br> الأساسية لإدارة الجيم
+      </p>
+      <hr class="footer-divider" />
+    
+      <p class="footer-copy">
+        © 2025 Fitness Basis. All rights reserved.
+      </p>
 
-        <!-- Title + Description -->
-        <h6 class="fw-semibold mb-2">
-            Transform your gym management with Fitness Basis
-        </h6>
-
-        <p class="text-unmuted mb-3">
-            Saudi Arabia’s Leading Gym Management Platform – أساس اللياقة
-        </p>
-
-        <hr >
-
-        <!-- Copyright -->
-        <p class="text-muted small">
-            © 2025 Fitness Basis. All rights reserved.
-        </p>
     </div>
-</section>
+  </footer>
 
 
 </body>
